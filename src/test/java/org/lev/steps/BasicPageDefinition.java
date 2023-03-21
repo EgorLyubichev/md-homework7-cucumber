@@ -106,7 +106,6 @@ public class BasicPageDefinition {
                 break;
             default:
                 System.err.println("ERROR: Case was not found text '" + string + "'!");
-
         }
     }
 }

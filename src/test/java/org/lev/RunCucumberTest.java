@@ -10,7 +10,9 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "org/lev/steps",
-        snippets = CAMELCASE
+        snippets = CAMELCASE,
+        plugin = { "pretty", "html:target/cucumber-reports.html" },
+        monochrome = true
 )
 public class RunCucumberTest {
 }
